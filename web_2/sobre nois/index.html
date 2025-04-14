@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brooklyn Nine-Nine - Um Tributo de Letícia & David</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #bde0fe, #ffc8dd);
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      border-bottom: 3px solid #ffafcc;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: #2b2d42;
+    }
+
+    .subtitulo {
+      font-size: 1.3rem;
+      color: #4a4e69;
+      margin-top: 0.6rem;
+    }
+
+    .imagem-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .imagem-container img {
+      width: 340px;
+      height: auto;
+      border-radius: 18px;
+      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    main {
+      max-width: 950px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      background-color: #ffffff;
+      padding: 2.5rem;
+      border-left: 6px solid #bde0fe;
+      border-radius: 12px;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    section h2 {
+      color: #2b2d42;
+      margin-bottom: 1.2rem;
+      font-size: 1.8rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
+    .foto-dupla {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .foto-dupla img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .foto-dupla p {
+      margin-top: 0.8rem;
+      font-style: italic;
+      color: #5e5e5e;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #ffafcc;
+      padding: 1rem 0;
+      font-size: 1rem;
+      color: #333;
+      border-top: 2px solid #a2d2ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Brooklyn Nine-Nine - Uma Homenagem de Letícia & David</h1>
+    <p class="subtitulo">Tributo à série que encanta pela mistura de comédia, amizade e trabalho em equipe.</p>
+  </header>
+
+  <div class="imagem-container">
+    <img src="img/b99.png" alt="Elenco de Brooklyn Nine-Nine">
+  </div>
+
+  <main>
+    <section>
+      <h2>Por que escolhemos Brooklyn Nine-Nine?</h2>
+      <p>
+        Brooklyn Nine-Nine é uma série que se destaca por equilibrar comédia, momentos emocionantes e a dinâmica de equipe. Com uma narrativa leve e personagens carismáticos, a série transmite importantes lições sobre amizade, trabalho em equipe e perseverança. Ao criar este tributo, buscamos capturar a essência que torna a série tão cativante e atemporal.
+      </p>
+    </section>
+
+    <section>
+      <h2>Quem somos</h2>
+      <p>
+        Somos <strong>Letícia Lima</strong> e <strong>David Fialho</strong>, estudantes do IFCE Maranguape, e este projeto foi desenvolvido como parte de um trabalho acadêmico. Nossa proposta foi criar uma página que refletisse nossa paixão pela série e também fosse funcional e visualmente agradável.
+      </p>
+      <ul>
+        <li><strong>Letícia Lima:</strong> Criativa e apaixonada por design e audiovisual, Letícia trouxe uma abordagem visual única para este projeto, garantindo que a estética da página estivesse alinhada com a essência da série.</li>
+        <li><strong>David Fialho:</strong> Com um olhar atento para a programação e o desenvolvimento, David foi responsável pela construção da estrutura do site, utilizando as tecnologias mais adequadas para tornar o projeto funcional e eficiente.</li>
+      </ul>
+      <p>
+        O trabalho em equipe foi fundamental para o sucesso deste projeto. Nossa colaboração trouxe diferentes perspectivas e habilidades, permitindo-nos criar algo que refletisse tanto nossa paixão pela série quanto nossos interesses acadêmicos.
+      </p>
+    </section>
+
+    <section>
+      <h2>O que aprendemos</h2>
+      <ul>
+        <li>Como desenvolver um site funcional e atraente utilizando HTML, CSS e Django.</li>
+        <li>Como transformar um conceito criativo em um projeto digital prático.</li>
+        <li>A importância de trabalhar em colaboração, aproveitando as forças individuais de cada membro da equipe.</li>
+      </ul>
+      <p>
+        Este projeto foi realizado como parte da disciplina <strong>Web2</strong>, oferecida pelo professor <strong>Alisson</strong>. A proposta foi aplicar os conhecimentos adquiridos ao longo do semestre para desenvolver uma aplicação interativa e criativa, o que foi alcançado com sucesso através de nossa colaboração.
+      </p>
+    </section>
+
+    <div class="foto-dupla">
+      <img src="{% static 'leticia_david.jpeg' %}" alt="Foto de Letícia e David">
+      <p>Letícia e David — Responsáveis por este tributo à Brooklyn Nine-Nine 💻🎨</p>
+    </div>
+  </main>
+
+  <footer>
+    Criado com dedicação por Letícia Lima & David Fialho | Projeto de Web2 - IFCE Maranguape - 2025
+  </footer>
+</body>
+</html>
